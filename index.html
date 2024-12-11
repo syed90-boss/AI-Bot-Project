@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Chatbot</title> 
+  <link rel="stylesheet" type="text/css" href="styles.css" /> 
+  <!-- Font awesome cdn --> 
+  <script src="https://kit.fontawesome.com/a2153b5117.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+  <!-- Scrolling Disclaimer Section -->
+  <div class="disclaimer-container">
+    <div class="disclaimer-text">
+      ⚠ Disclaimer: This application is temporarily unavailable due to the expiration of the API key. 
+      We are working to resolve this issue as soon as possible. Please check back later.
+    </div>
+  </div>
+
+  <!-- Chatbot Interface -->
+  <div id="chat-window"> 
+    <div class="main-title"> AI CHAT BOT</div> 
+    <div class="main-subtitle"><p><i class="fa-regular fa-circle-dot fa-bounce" style="color: #00ff40;"></i> online</p></div> 
+    <div id="chat-messages"></div> 
+    <form id="chat-form"> 
+      <input type="text" id="chat-input" autocomplete="off" placeholder="Type your message here" required autofocus /> 
+      <button type="submit"><i class="fa-sharp fa-solid fa-paper-plane fa-beat"></i></button> 
+      <button type="submit" onclick="recognition.start()" class="btn click2">
+        <i class="fa-sharp fa-solid fa-microphone fa-beat"></i>
+      </button> 
+    </form> 
+  </div> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script> 
+  <script src="syed.js"></script> 
+</body> 
+</html>
